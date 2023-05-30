@@ -1,4 +1,4 @@
-# Blender USDZ Export Add-on
+# Blender USD/USDZ Export Add-on
 
 This add-on allows users to export their Blender projects to the USDZ format, even if they are using versions of Blender below 3.5, which added native support for USDZ export. The add-on achieves this functionality by running an instance of Blender 3.5 or a higher version in the background.
 
