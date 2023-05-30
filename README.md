@@ -6,7 +6,7 @@ This add-on allows users to export their Blender projects to the USDZ format, ev
 
 ## Installation
 
-Just install the add-on like any other Blender add-on. You can download the latest release from the [Releases]
+Just install the add-on like any other Blender add-on. You can download the latest release from the [Releases](https://github.com/RodrigoGama1902/blender-addon-usd-exporter-port/releases)
 
 ## Add-on Preferences Setup
 
