@@ -8,7 +8,7 @@ from ..utility.functions import get_prefs
 from pathlib import Path
 
 class USDPORT_OP_USDExporterPort(bpy.types.Operator, ExportHelper):
-    """Google USDZ Exporter"""
+    """USDZ Exporter"""
     
     bl_idname = "usdport.export_usdz"
     bl_label = "Universal Scene Description [Port] (.usd*)"
