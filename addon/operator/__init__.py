@@ -1,10 +1,10 @@
 import bpy
 
-from .usd_exporter_port import USDPORT_OP_USDExporterPort
+from .usd_exporter_port import USDPORT_OT_USDExporterPort
 
 
 classes = (
-    USDPORT_OP_USDExporterPort,
+    USDPORT_OT_USDExporterPort,
 )
 
 def draw_export_operator(self, context):

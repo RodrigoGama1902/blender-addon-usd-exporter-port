@@ -7,7 +7,7 @@ from ..utility.functions import get_prefs
 
 from pathlib import Path
 
-class USDPORT_OP_USDExporterPort(bpy.types.Operator, ExportHelper):
+class USDPORT_OT_USDExporterPort(bpy.types.Operator, ExportHelper):
     """USDZ Exporter"""
     
     bl_idname = "usdport.export_usdz"
