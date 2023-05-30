@@ -18,6 +18,10 @@ In order to use the add-on, you must specify the path to the Blender executable 
 
 Locate the `Universal Scene Description [Port]` operator in the `File > Export` menu. The operator will open a file browser where you can specify the path to the output file. The operator will then run an instance of Blender 3.5 or a higher version in the background to perform the export process.
 
+## Operator Options
+
+For now, the only option available is the `Selection Only` option, which allows you to export only the selected objects in the scene. But more options will be added in the future.
+
 Note: The add-on supports using a Blender version higher than 3.5 if you have a version with an improved USDZ exporter. Specify the file path to the desired Blender executable in the add-on preferences to utilize a specific version.
 
 Please make sure to regularly check for updates to the Blender USDZ Export add-on to stay up to date with any new features or bug fixes.
