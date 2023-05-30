@@ -22,6 +22,8 @@ Locate the `Universal Scene Description [Port]` operator in the `File > Export` 
 
 For now, the only option available is the `Selection Only` option, which allows you to export only the selected objects in the scene. But more options will be added in the future.
 
+![USDZ Preferences](docs/operator_settings.jpg)
+
 Note: The add-on supports using a Blender version higher than 3.5 if you have a version with an improved USDZ exporter. Specify the file path to the desired Blender executable in the add-on preferences to utilize a specific version.
 
 Please make sure to regularly check for updates to the Blender USDZ Export add-on to stay up to date with any new features or bug fixes.
