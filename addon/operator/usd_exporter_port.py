@@ -42,8 +42,8 @@ class USDPORT_OT_USDExporterPort(bpy.types.Operator, ExportHelper):
             self.report({'ERROR'}, "Blender 3.5 .exe not found, check the add-on preferences")
             return {'CANCELLED'}
         
-        if not bpy.data.is_saved:
-            self.report({'ERROR'}, "File not saved")
+        if not bpy.data.filepath:
+            self.report({'ERROR'}, "Save the file at least once before exporting")
             return {'CANCELLED'}
         
         if not self.check_binary_version(blender_binary_path):
