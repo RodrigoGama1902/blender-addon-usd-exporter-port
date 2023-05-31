@@ -11,7 +11,9 @@ for agr in sys.argv:
         selected_objects_only = agr[22:]
 
 print("output_filepath: " + output_filepath)
-print("selected_objects_only: " + str(selected_objects_only))
+print("selected_objects_only: " + selected_objects_only)
+
+selected_objects_only = selected_objects_only == "True"
 
 bpy.ops.wm.usd_export(
     filepath = output_filepath, 
