@@ -42,6 +42,10 @@ class USDPORT_OT_USDExporterPort(bpy.types.Operator, ExportHelper):
             self.report({'ERROR'}, "Blender 3.5 .exe not found, check the add-on preferences")
             return {'CANCELLED'}
         
+        if not bpy.data.is_saved:
+            self.report({'ERROR'}, "File not saved")
+            return {'CANCELLED'}
+        
         if not self.check_binary_version(blender_binary_path):
             self.report({'ERROR'}, "Blender 3.5 (Or higher) not found, check the add-on preferences")
             return {'CANCELLED'}
@@ -55,7 +59,8 @@ class USDPORT_OT_USDExporterPort(bpy.types.Operator, ExportHelper):
             str(generator_path), 
             "--", 
             "output_filepath:" + self.filepath,
-            "selected_objects_only:" + str(self.selected_objects_only)]
+            "selected_objects_only:" + str(self.selected_objects_only)
+            ]
 
         subprocess.run(cmd, check=True)
         
